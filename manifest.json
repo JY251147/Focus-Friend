@@ -1,0 +1,17 @@
+{
+  "name": "学习助手",
+  "short_name": "学助",
+  "description": "一个结合了AI的个性化学习与时间管理工具",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F0F8FF",
+  "theme_color": "#4A90E2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

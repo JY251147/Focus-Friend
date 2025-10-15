@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>学习助手</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <header class="app-header">
+            <h1>学习助手</h1>
+        </header>
+
+        <main class="main-content">
+            <div id="chat-container">
+                <div id="chat-window">
+                    <div id="chat-messages">
+                        <div class="message bot-message">
+                            <p>你好！今天想学习什么？或者需要我帮你安排时间吗？</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="在这里输入文字...">
+                    <button id="mic-button">🎤</button>
+                    <button id="send-button">发送</button>
+                </div>
+            </div>
+
+            <div id="right-panel">
+                                <!-- All clock UI is now handled by the web component -->
+                <smart-clock></smart-clock>
+
+                <div id="homework-checker">
+                    <h2>作业检查</h2>
+                    <button id="check-homework-btn">
+                        <span class="icon">📷</span>
+                        <span>拍下作业，让我来帮你检查</span>
+                    </button>
+                    <input type="file" id="photo-upload" accept="image/*" capture="environment" style="display: none;">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

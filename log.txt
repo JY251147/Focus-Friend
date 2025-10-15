@@ -1,0 +1,138 @@
+[11:08:05] [App] Notification API is available.
+[11:08:05] [App] DOM fully loaded and parsed.
+[11:08:05] [App] Retrieved all necessary DOM elements.
+[11:08:05] [App] Application initialization complete.
+[11:08:12] [App] Sending message. User input: "你好"
+[11:08:12] [App] Sending prompt to AI: "你好"
+[11:08:12] [App] Conversation history empty. Adding system prompt.
+[11:08:16] [App] Received AI response object.
+[11:08:16] [App] Requesting TTS for text: "你好呀！我是你的启蒙老师，很高兴认识你！你今天想和我一起探索什么有趣的事情呢？比..."
+[11:08:17] [Error] Error fetching TTS audio: Failed to fetch
+[11:09:08] [Error] Speech recognition error: not-allowed
+[11:09:15] [Error] Speech recognition error: not-allowed
+[11:10:35] [App] Notification API is available.
+[11:10:35] [App] DOM fully loaded and parsed.
+[11:10:35] [App] Retrieved all necessary DOM elements.
+[11:10:35] [App] Application initialization complete.
+[11:10:40] [App] Sending message. User input: "你好"
+[11:10:40] [App] Sending prompt to AI: "你好"
+[11:10:40] [App] Conversation history empty. Adding system prompt.
+[11:10:43] [App] Received AI response object.
+[11:10:43] [App] Requesting TTS for text: "你好呀！我是你的启蒙老师，很高兴认识你！你今天想和我一起探索什么有趣的事情呢？比..."
+[11:10:44] [Error] Error fetching TTS audio: Failed to fetch
+[11:11:35] [App] Notification API is available.
+[11:11:35] [App] DOM fully loaded and parsed.
+[11:11:35] [App] Retrieved all necessary DOM elements.
+[11:11:35] [App] Application initialization complete.
+[11:11:38] [Clock] startFocus called. Current state: idle
+[11:11:38] [Clock] State set to "focus". Timer started.
+[11:11:46] [App] Sending message. User input: "我做完了"
+[11:11:46] [App] Detected "我做完了" during focus session. Triggering overlearning prompt.
+[11:11:46] [App] Sending prompt to AI: "我刚刚完成了我的学习任务，请你像一位老师一样，引导我回顾和检查一下刚才学习的内容，帮助我加深理解。"
+[11:11:46] [App] Conversation history empty. Adding system prompt.
+[11:11:51] [App] Received AI response object.
+[11:11:51] [App] Requesting TTS for text: "（用温和的语气）真为你感到骄傲！完成学习任务就像搭好了一座小积木城堡呢。让我们像..."
+[11:11:52] [Error] Error fetching TTS audio: Failed to fetch
+[11:26:08] [App] Notification API is available.
+[11:26:08] [App] DOM fully loaded and parsed.
+[11:26:08] [App] Retrieved all necessary DOM elements.
+[11:26:08] [App] Application initialization complete.
+[11:26:13] [App] Sending message. User input: "你好"
+[11:26:13] [App] Conversation history empty. Adding system prompt.
+[11:26:13] [App] Sending prompt to AI: "你好"
+[11:26:17] [App] Received AI response object.
+[11:26:17] [App] Requesting TTS for text: "你好呀！我是你的启蒙老师，很高兴认识你！你今天想和我一起探索什么有趣的事情呢？比..."
+[11:26:18] [Error] Error in TTS process: Failed to fetch
+[11:26:23] [Clock] startFocus called. Current state: idle
+[11:26:23] [Clock] State set to "focus". Timer started.
+[11:26:29] [App] Sending message. User input: "我做完了"
+[11:26:29] [App] Sending prompt to AI: "我刚刚完成了我的学习任务，请你像一位老师一样，引导我回顾和检查一下刚才学习的内容，帮助我加深理解。"
+[11:26:29] [App] Detected "我做完了" during focus session. Triggering overlearning prompt.
+[11:26:38] [App] Received AI response object.
+[11:26:38] [App] Requesting TTS for text: "哇！你完成了学习任务，真是个爱动脑筋的小能手！让我们像玩“知识寻宝游戏”一样回顾..."
+[11:26:38] [Error] Error in TTS process: Failed to fetch
+[11:26:40] [App] Sending message. User input: "I am done"
+[11:26:40] [App] Sending prompt to AI: "I am done"
+[11:26:50] [App] Received AI response object.
+[11:26:50] [Error] Error in TTS process: Failed to fetch
+[11:31:15] [App] Notification API is available.
+[11:31:15] [App] DOM fully loaded and parsed.
+[11:31:15] [App] Retrieved all necessary DOM elements.
+[11:31:15] [App] Application initialization complete.
+[11:31:24] [App] Sending message. User input: "say something"
+[11:31:24] [App] Sending prompt to AI: "say something"
+[11:31:24] [App] Conversation history empty. Adding system prompt.
+[11:31:28] [App] Received AI response object.
+[11:31:28] [App] Requesting TTS for text: "你好呀！今天想和我一起探索什么有趣的事情呢？比如我们来看看窗外的小鸟，或者聊聊你..."
+[11:31:29] [App] Playing TTS audio from /audio/output.mp3?v=1760412689.504689
+[11:31:29] [Error] Error playing audio file from URL: /audio/output.mp3?v=1760412689.504689
+[11:36:58] [App] Notification API is available.
+[11:36:58] [App] DOM fully loaded and parsed.
+[11:36:58] [App] Application initialization complete.
+[11:36:58] [App] Retrieved all necessary DOM elements.
+[11:37:10] [App] Sending message. User input: "hello how is"
+[11:37:10] [App] Conversation history empty. Adding system prompt.
+[11:37:10] [App] Sending prompt to AI: "hello how is"
+[11:37:14] [App] Requesting TTS for text: "Hello there! I'm doing wonderfully today..."
+[11:37:14] [App] Received AI response object.
+[11:37:14] [Error] Error in TTS process: Server did not return a valid audio URL.
+[11:42:11] [App] Notification API is available.
+[11:42:11] [App] DOM fully loaded and parsed.
+[11:42:11] [App] Retrieved all necessary DOM elements.
+[11:42:11] [App] Application initialization complete.
+[11:42:20] [App] Sending message. User input: "你好"
+[11:42:20] [App] Sending prompt to AI: "你好"
+[11:42:20] [App] Conversation history empty. Adding system prompt.
+[11:42:25] [App] Received AI response object.
+[11:42:25] [App] Requesting TTS for text: "你好呀！我是你的启蒙老师，很高兴认识你！你今天想和我一起探索什么有趣的事情呢？比..."
+[11:42:25] [App] Playing TTS audio from /audio/output.mp3?v=1760413345.830635
+[11:42:25] [Error] Error playing audio file from URL: /audio/output.mp3?v=1760413345.830635
+[11:44:26] [App] Notification API is available.
+[11:44:26] [App] Retrieved all necessary DOM elements.
+[11:44:26] [App] DOM fully loaded and parsed.
+[11:44:26] [App] Application initialization complete.
+[11:44:31] [App] Sending message. User input: "hello"
+[11:44:31] [App] Sending prompt to AI: "hello"
+[11:44:31] [App] Conversation history empty. Adding system prompt.
+[11:44:35] [App] Received AI response object.
+[11:44:35] [App] Requesting TTS for text: "你好呀！我是你的启蒙老师，很高兴认识你！你今天想和我一起探索什么有趣的事情呢？比..."
+[11:44:35] [App] Playing TTS audio from /audio/output.mp3?v=1760413475.8481
+[11:44:35] [Error] Error playing audio file from URL: /audio/output.mp3?v=1760413475.8481
+[11:48:44] [App] DOM fully loaded and parsed.
+[11:48:44] [App] Notification API is available.
+[11:48:44] [App] Application initialization complete.
+[11:48:44] [App] Retrieved all necessary DOM elements.
+[11:48:54] [App] Sending message. User input: "你好"
+[11:48:54] [App] Sending prompt to AI: "你好"
+[11:48:54] [App] Conversation history empty. Adding system prompt.
+[11:48:58] [App] Received AI response object.
+[11:48:58] [Error] Error connecting to AI: logMessage is not defined
+[11:52:57] [App] Notification API is available.
+[11:52:57] [App] DOM fully loaded and parsed.
+[11:52:57] [App] Application initialization complete.
+[11:52:57] [App] Retrieved all necessary DOM elements.
+[11:53:02] [App] Sending message. User input: "你好"
+[11:53:02] [App] Sending prompt to AI: "你好"
+[11:53:02] [App] Conversation history empty. Adding system prompt.
+[11:53:05] [App] Received AI response object.
+[11:53:05] [Error] Error connecting to AI: logMessage is not defined
+[11:54:54] [App] Notification API is available.
+[11:54:54] [App] Retrieved all necessary DOM elements.
+[11:54:54] [App] DOM fully loaded and parsed.
+[11:54:54] [App] Application initialization complete.
+[11:54:59] [App] Sending message. User input: "你好呀"
+[11:54:59] [App] Conversation history empty. Adding system prompt.
+[11:54:59] [App] Sending prompt to AI: "你好呀"
+[11:55:02] [App] Received AI response object.
+[11:55:02] [App] [App] Requesting browser speech for text: "你好呀！我是你的启蒙老师，很高兴认识你！你今天有没有发现什么有趣的事情，想和我分享呢？"...
+[11:55:02] [App] [App] Using voice: Microsoft Huihui - Chinese (Simplified, PRC) (zh-CN)
+[14:18:13] [App] Notification API is available.
+[14:18:13] [App] Requesting notification permission...
+[14:18:13] [App] DOM fully loaded and parsed.
+[14:18:13] [App] Retrieved all necessary DOM elements.
+[14:18:13] [App] Application initialization complete.
+[14:18:14] [Warning] Notification permission denied.
+[14:18:24] [App] Sending message. User input: "nihao"
+[14:18:24] [App] Sending prompt to AI: "nihao"
+[14:18:24] [App] Conversation history empty. Adding system prompt.
+[14:18:33] [App] Received AI response object.

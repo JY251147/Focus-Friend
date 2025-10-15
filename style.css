@@ -1,0 +1,365 @@
+:root {
+    --primary-bg: #F0F8FF; /* 爱丽丝蓝 */
+    --secondary-bg: #FFFFFF;
+    --header-bg: #4A90E2; /* 鲜艳的蓝色 */
+    --text-color: #333333;
+    --bot-message-bg: #E9F5FE;
+    --user-message-bg: #DCF8C6; /* 淡绿色 */
+    --accent-color: #FFC107; /* 琥珀色 */
+    --border-color: #B0C4DE; /* 亮钢蓝色 */
+    --font-family: 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    overflow: hidden;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.app-header {
+    background-color: var(--header-bg);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    padding: 15px;
+    gap: 15px;
+    overflow: hidden;
+}
+
+#chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+#chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background-color: var(--bot-message-bg);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.user-message {
+    background-color: var(--user-message-bg);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+#chat-input-container {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+#chat-input {
+    flex-grow: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+#send-button {
+    background-color: var(--header-bg);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#mic-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: var(--header-bg);
+}
+
+#mic-button.listening {
+    background-color: #ff7979;
+}
+
+
+#right-panel {
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#smart-clock-container, #homework-checker {
+    background-color: var(--secondary-bg);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--header-bg);
+}
+
+#check-homework-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+#check-homework-btn .icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* --- Smart Clock Styles --- */
+#smart-clock-container {
+    text-align: center;
+}
+
+.clock-controls-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.clock-controls-grid label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#smart-clock-container select,
+#smart-clock-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.9em;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+#clock-display {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 15px 0;
+    font-family: 'Courier New', Courier, monospace; /* Monospaced for stable width */
+}
+
+.clock-buttons button {
+    background-color: var(--header-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.clock-buttons button:hover {
+    opacity: 0.9;
+}
+
+#reset-clock-btn, #reset-simple-clock-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+#clock-history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#clock-history h3 {
+    margin-bottom: 10px;
+    color: var(--header-bg);
+    border-bottom: 2px solid var(--primary-bg);
+    padding-bottom: 5px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 160px; /* Set a max height */
+    overflow-y: auto; /* Make it scrollable */
+    font-size: 0.9em;
+}
+
+#history-list li {
+    padding: 8px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+#smart-clock-container.running {
+    background-color: #E9F5FE; /* A light blue to indicate activity */
+    border-left: 5px solid var(--header-bg);
+    transition: background-color 0.3s, border-left 0.3s;
+}
+
+.history-date {
+    font-weight: bold;
+    color: #555;
+}
+
+.history-label {
+    font-style: italic;
+    color: var(--header-bg);
+}
+
+.history-duration {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* --- New Scientific Focus Partner Styles --- */
+
+#focus-mode-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.clock-prompt {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: var(--header-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.primary-btn:hover {
+    opacity: 0.9;
+}
+
+#active-session-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#clock-status {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+.status-focus {
+    background-color: var(--header-bg); /* Blue for focus */
+}
+
+.status-break {
+    background-color: #28a745; /* Green for break */
+}
+
+#active-session-display #clock-display {
+    margin: 0; /* Override default margin for a tighter look */
+}
+
+
+/* Simple Timers Section */
+#simple-timers-container {
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+#simple-timers-container summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--header-bg);
+    text-align: center;
+    display: block; /* Allows for better centering and spacing */
+}
+
+#simple-timers-container summary:hover {
+    text-decoration: underline;
+}
+
+#simple-timer-controls {
+    margin-top: 15px;
+}
